@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "jsxImportSource": "react",
     "incremental": true,
     "plugins": [
       {
@@ -21,7 +22,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.mdx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
